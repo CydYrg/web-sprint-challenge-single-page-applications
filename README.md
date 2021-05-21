@@ -37,7 +37,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 The useRouteMatch hook attempts to match the current URL in the same way that a <Route> would. It's mostly useful for getting access to the match data without actually rendering a <Route>
 
 1. How would you explain form validation to someone who has never programmed before?
+
+JavaScript provides a way to validate form's data on the client's computer before sending it to the web server. Form validation generally performs two functions.
+
+Basic Validation − First of all, the form must be checked to make sure all the mandatory fields are filled in. It would require just a loop through each field in the form and check for data.
+
+Data Format Validation − Secondly, the data that is entered must be checked for correct form and value. Your code must include appropriate logic to test correctness of data.
+
 1. In 1-2 sentences, define end to end testing.
+
+End-to-end testing is a Software testing methodology to test an application flow from start to end. The purpose of End to end testing is to simulate the real user scenario and validate the system under test and its components for integration and data integrity.
 
 ## Instructions
 
