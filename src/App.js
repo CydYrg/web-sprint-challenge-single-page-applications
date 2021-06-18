@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Route, Link, Switch } from 'react-router-dom'
 
-import Home from './Home'
-import Item from './Item'
-import Pizza from './Pizza'
+import Home from './component/Home.js'
+import Item from './component/Item.js'
+import Pizza from './component/Pizza.js'
 
-import data from './data'
+//import data from './data'
 
 function fetchStock() {
-  // fetchStock simulates getting data through axios.get(<URL>)
-  return Promise.resolve({ success: true, data })
+  
+  return Promise.resolve({ success: true, /*data*/ })
 }
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
 
 <Switch>
   <Route exact path="/items-list/:itemID">
-    <Item items={stock} />
+    <Item items={''} />
   </Route>
   <Route exact path='/order-pizza' component={Pizza} />
   <Route exact path='/' component={Home} />
